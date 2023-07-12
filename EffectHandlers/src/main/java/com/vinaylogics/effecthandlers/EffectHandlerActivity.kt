@@ -10,7 +10,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
-import com.vinaylogics.effecthandlers.ui.theme.ComposeBasicsTheme
+import com.vinaylogics.theme.ui.theme.ComposeBasicsTheme
 import kotlinx.coroutines.delay
 import kotlin.time.Duration.Companion.seconds
 

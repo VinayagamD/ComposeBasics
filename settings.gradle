@@ -16,3 +16,4 @@ rootProject.name = "ComposeBasics"
 include ':app'
 include ':EffectHandlers'
 include ':Basics'
+include ':SimpleAnimation'

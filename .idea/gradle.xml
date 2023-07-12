@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Basics" />
             <option value="$PROJECT_DIR$/EffectHandlers" />
+            <option value="$PROJECT_DIR$/SimpleAnimation" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

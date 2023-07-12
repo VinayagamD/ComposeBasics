@@ -5,9 +5,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.vinaylogics.simpleanimation.theme.GetInfiniteTransitionAnimation
+import com.vinaylogics.simpleanimation.GetInfiniteTransitionAnimation
 
 class MainActivity : ComponentActivity() {
+
+
+    private var i = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

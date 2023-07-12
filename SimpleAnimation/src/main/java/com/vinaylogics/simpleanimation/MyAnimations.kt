@@ -1,4 +1,4 @@
-package com.vinaylogics.simpleanimation.theme
+package com.vinaylogics.simpleanimation
 
 import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.FastOutLinearInEasing

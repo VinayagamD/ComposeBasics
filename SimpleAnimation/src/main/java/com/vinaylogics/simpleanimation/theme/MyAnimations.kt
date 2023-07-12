@@ -1,8 +1,11 @@
 package com.vinaylogics.simpleanimation.theme
 
+import androidx.compose.animation.core.FastOutLinearInEasing
+import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.animation.core.keyframes
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -56,6 +59,34 @@ fun GetSpringAnimation(){
         spring(
             Spring.DampingRatioHighBouncy
         )
+    )
+    Box(modifier = Modifier
+        .size(size)
+        .background(Color.Red),
+        contentAlignment = Alignment.Center) {
+
+        Button(onClick = {
+            sizeState += 50.dp
+        }) {
+            Text("Increase Size")
+        }
+    }
+}
+
+
+@Composable
+fun GetKeyFramesAnimation(){
+    var sizeState by remember {
+        mutableStateOf(200.dp)
+    }
+    val size by animateDpAsState(
+        targetValue = sizeState,
+        keyframes {
+            durationMillis = 5000
+            sizeState at 0 with LinearEasing
+            sizeState * 1.5f at 1000 with FastOutLinearInEasing
+            sizeState * 2f at 5000
+        }
     )
     Box(modifier = Modifier
         .size(size)

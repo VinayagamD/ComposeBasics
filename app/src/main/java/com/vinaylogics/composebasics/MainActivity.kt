@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.vinaylogics.simpleanimation.theme.GetKeyFramesAnimation
+import com.vinaylogics.simpleanimation.theme.GetTweenAnimation
 
 class MainActivity : ComponentActivity() {
 
@@ -15,7 +16,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-           GetKeyFramesAnimation()
+           GetTweenAnimation()
         }
 
     }

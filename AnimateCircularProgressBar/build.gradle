@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.vinaylogics.basics'
+    namespace 'com.vinaylogics.animatecircularprogressbar'
     compileSdk 33
 
     defaultConfig {
